@@ -1,0 +1,11 @@
+SELECT DISTINCT ?item ?itemLabel ?email WHERE {
+  #localitati
+  #mun. din RO (Q640364) sau oras din RO (Q16858213)
+  ?item wdt:P31 ?tipUAT .
+  VALUES ?tipUAT { wd:Q640364 wd:Q16858213 }
+  
+  #daca nu avem adresa de mail casuta goala
+  OPTIONAL { ?item wdt:P968 ?email . }
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],ro,en". }
+}
