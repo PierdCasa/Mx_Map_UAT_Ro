@@ -4,6 +4,7 @@ An interactive HTML map of Romanian localities and administrative units, colored
 
 The project was developed for an exercise about identifying where public-administration email services are hosted: in Romania, in the United States, or in another country. It follows the MXMap idea used by projects such as [MXMap Switzerland](https://mxmap.ch/) and [MXMap Netherlands](https://mxmap.nl/), but implements the data collection and visualization specifically for Romania.
 
+![Landing Page ](mx_map.png)
 ## Assignment
 
 The exercise requires:
